@@ -1,0 +1,106 @@
+.page { padding: 64px 24px 80px; }
+.inner { max-width: 1100px; margin: 0 auto; }
+
+.pageHeader { margin-bottom: 48px; }
+.eyebrow {
+  font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--sage-accent); margin-bottom: 10px;
+}
+.pageTitle {
+  font-family: var(--font-display); font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400; color: var(--sage-text); margin-bottom: 12px;
+}
+.pageSub { font-size: 15px; color: var(--sage-muted); line-height: 1.65; max-width: 560px; }
+
+/* Featured */
+.featured {
+  background: var(--sage-surface); border: 1px solid var(--sage-border);
+  border-radius: var(--radius-lg); padding: 32px; margin-bottom: 16px;
+}
+.featuredHead {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 16px; margin-bottom: 14px;
+}
+.cardHead {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 16px; margin-bottom: 12px;
+}
+.cardType {
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--sage-accent); margin-bottom: 6px;
+}
+.cardTitle {
+  font-family: var(--font-display); font-size: 20px; font-weight: 400;
+  color: var(--sage-text); line-height: 1.25;
+}
+.yearBadge {
+  font-family: var(--font-mono); font-size: 11px; color: var(--sage-hint);
+  background: var(--sage-bg); border: 1px solid var(--sage-border);
+  padding: 4px 10px; border-radius: 20px; white-space: nowrap; flex-shrink: 0;
+}
+.cardDesc { font-size: 14px; color: var(--sage-muted); line-height: 1.7; margin-bottom: 24px; }
+
+.twoCol { display: grid; grid-template-columns: 1fr 280px; gap: 32px; }
+.colLabel {
+  font-family: var(--font-mono); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--sage-hint); margin-bottom: 12px;
+}
+.highlights { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.highlights li {
+  font-size: 13px; color: var(--sage-muted); line-height: 1.5;
+  padding-left: 16px; position: relative;
+}
+.highlights li::before {
+  content: '—'; position: absolute; left: 0;
+  color: var(--sage-accent); font-size: 12px;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 16px; }
+.tag {
+  font-family: var(--font-mono); font-size: 10px; padding: 3px 8px;
+  background: var(--sage-bg); color: var(--sage-muted);
+  border: 1px solid var(--sage-border); border-radius: var(--radius-sm);
+}
+.impactBadge {
+  display: inline-block; font-family: var(--font-mono); font-size: 11px;
+  color: var(--sage-pill-txt); background: var(--sage-pill-bg);
+  border: 1px solid var(--sage-border); padding: 5px 12px; border-radius: 20px;
+}
+
+/* Grid */
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.card {
+  background: var(--sage-surface); border: 1px solid var(--sage-border);
+  border-radius: var(--radius-lg); padding: 24px;
+  display: flex; flex-direction: column; gap: 0;
+  transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--sage-border-2); }
+.cardFooter { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+
+/* CTA */
+.bottomCta {
+  margin-top: 48px; padding: 32px;
+  background: var(--sage-surface); border: 1px solid var(--sage-border);
+  border-radius: var(--radius-lg);
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.ctaText { font-family: var(--font-display); font-size: 22px; color: var(--sage-text); }
+.ctaBtn {
+  display: inline-block; background: var(--sage-accent-2); color: #fff;
+  font-size: 14px; font-weight: 500; padding: 11px 24px;
+  border-radius: var(--radius-md); transition: background 0.15s; white-space: nowrap;
+}
+.ctaBtn:hover { background: var(--sage-accent); }
+
+@media (max-width: 860px) {
+  .twoCol { grid-template-columns: 1fr; }
+  .grid { grid-template-columns: 1fr; }
+  .bottomCta { flex-direction: column; align-items: flex-start; }
+}
+
+/* Footer */
+.footer { border-top: 1px solid var(--sage-border); padding: 20px 24px; background: var(--sage-surface); margin-top: 80px; }
+.footerInner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.footerName { font-family: var(--font-display); font-size: 15px; color: var(--sage-text); }
+.footerRole { font-family: var(--font-mono); font-size: 11px; color: var(--sage-hint); flex: 1; }
+.footerNote { font-family: var(--font-mono); font-size: 11px; color: var(--sage-hint); }
