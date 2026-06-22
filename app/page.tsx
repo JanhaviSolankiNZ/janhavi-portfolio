@@ -4,15 +4,15 @@ import styles from './page.module.css'
 const stack = ['React', 'Next.js', 'TypeScript', 'Node.js', 'GraphQL', 'Tailwind CSS', 'MongoDB', 'PostgreSQL', 'Redux', 'Jest', 'Docker', 'Stripe API']
 
 const highlights = [
-  { num: '4+', label: 'years experience' },
-  { num: '35%', label: 'load time reduction' },
-  { num: '40%', label: 'workflow efficiency gain' },
+  { num: '4+', label: 'years production experience' },
   { num: '26', label: 'languages shipped' },
+  { num: '~40%', label: 'agent workflow reduction' },
+  { num: '~35%', label: 'page load time reduction' },
 ]
 
 const previews = [
-  { type: 'SaaS · AI · Independent', title: 'Spendly — AI Expense Tracker', desc: 'Full-stack with Stripe, Groq LLM, OAuth, MongoDB analytics' },
-  { type: 'Enterprise · Communications', title: 'Twilio Flex Platform', desc: 'Custom plugins · 40% fewer manual agent steps' },
+  { type: 'Independent · Full Stack · AI', title: 'Spendly — AI Expense Tracker', desc: 'Full-stack with Stripe, Groq LLM, OAuth, MongoDB analytics' },
+  { type: 'Enterprise · Communications · Twilio', title: 'Twilio Flex Platform', desc: 'Custom plugins · 40% fewer manual agent steps' },
   { type: 'Education · i18n', title: 'School Registration System', desc: '26 languages · skeleton loaders · maintenance mode' },
 ]
 
