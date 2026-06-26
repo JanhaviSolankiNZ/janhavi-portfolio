@@ -116,14 +116,7 @@ const skillGroups = [
 
 const timeline = [
   {
-    period: "Feb 2021 – Jun 2021",
-    role: "Trainee Software Engineer",
-    company: "Tatvasoft, India (Remote)",
-    detail:
-      "Intensive training in React, TypeScript, GraphQL, Redux, Node.js, and Next.js. Progressed to production contributions within 6 months.",
-  },
-  {
-    period: "Jul 2021 – Jul 2025",
+    period: "Feb 2021 – Jul 2025",
     role: "Software Engineer",
     company: "Tatvasoft, India (Remote)",
     detail:
